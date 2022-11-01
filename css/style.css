@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #3a414e;
+  --color-secondary: #22195b;
+  --color-white: #fff;
+  --color-nav: #412fb3;
+  --font-rajdani: "Rajdhani", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+
+/* typography */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-inter);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-primary);
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-rajdani);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+@media screen and (min-width: 650px) {
+  h1 {
+    font-size: 4.4rem;
+  }
+}
+
+h2 {
+  font-size: 2.7rem;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+/* buttons */
