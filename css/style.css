@@ -54,6 +54,7 @@ h3 {
   font-size: 2.3rem;
   font-weight: 600;
   margin-bottom: 0;
+  margin-top: 1.2rem;
 }
 
 /* buttons */
@@ -106,4 +107,22 @@ h3 {
   .grid__autofit {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* feature */
+
+.feature {
+  text-align: center;
+  border: 1px solid green;
+  padding: 2.5rem 3rem 2rem;
+  background: #faf9ff;
+}
+
+.feature i {
+  font-size: 2.4rem;
+  color: var(--color-secondary);
+}
+
+.feature__content {
+  margin-top: 0.8rem;
 }
