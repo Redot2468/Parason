@@ -85,3 +85,25 @@ h3 {
 }
 
 /* grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.grid > div {
+  border: 1px solid green;
+}
+
+@media screen and (min-width: 768px) {
+  .grid__1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid__autofit {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
