@@ -77,6 +77,7 @@ h3 {
 
 .btn__secondary {
   border: 1px solid var(--color-secondary);
+  background: none;
 }
 
 @media screen and (max-width: 650px) {
@@ -125,4 +126,32 @@ h3 {
 
 .feature__content {
   margin-top: 0.8rem;
+}
+
+/* stats and pc description */
+.stats__pc {
+  border: 1px solid green;
+}
+
+.stats__pc .btn {
+  margin-top: 2rem;
+}
+
+/* block headings */
+
+.block__heading {
+  border: 1px solid green;
+  text-align: center;
+  padding: 1rem 2rem;
+}
+
+.block__desc {
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block__desc {
+    max-width: 700px;
+    margin: 1rem auto;
+  }
 }
