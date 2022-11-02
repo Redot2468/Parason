@@ -258,3 +258,37 @@ h3 {
   border-top: 1px solid rgb(230, 230, 230);
   border-bottom: 1px solid rgb(230, 230, 230);
 }
+
+/* offered features */
+
+.offered__features {
+  padding: 2rem;
+  row-gap: 2rem;
+  border: 1px solid green;
+}
+
+@media screen and (min-width: 768px) {
+  .offered__features {
+    column-gap: 3rem;
+    row-gap: 0;
+    height: 500px;
+  }
+
+  .offer__camera {
+    align-self: flex-start;
+  }
+
+  .offer__paper {
+    align-self: center;
+    margin-top: 3rem;
+  }
+
+  .offer__snowflake {
+    align-self: center;
+    margin-bottom: 3rem;
+  }
+
+  .offer__stopwatch {
+    align-self: flex-end;
+  }
+}
