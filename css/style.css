@@ -10,6 +10,7 @@
   --color-white: #fff;
   --color-nav: #412fb3;
   --color-text: #797979;
+  --color-background: #faf9ff;
   --font-rajdani: "Rajdhani", sans-serif;
   --font-inter: "Inter", sans-serif;
 }
@@ -196,9 +197,12 @@ h3 {
 }
 
 /* list */
+.list {
+  padding-left: 0;
+}
 .list li {
   list-style: none;
-  margin: 1rem;
+  margin: 1.5rem;
 }
 
 .list a {
@@ -208,6 +212,7 @@ h3 {
 /* plans heading */
 .plan__type {
   font-size: 2.6rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
@@ -216,10 +221,40 @@ h3 {
 }
 
 .plan__price {
-  font-family: var(--font-inter);
-  font-size: 4.7rem;
+  font-size: 6rem;
   font-weight: 700;
   margin-top: 2.4rem;
 }
 
 /* plans */
+
+.plans > section {
+  padding: 1.6rem 0 3rem;
+}
+
+.plans {
+  text-align: center;
+  background: var(--color-background);
+  margin: 3rem;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.plans:hover {
+  background: var(--color-white);
+  box-shadow: 0 10px 40px rgb(219, 219, 219);
+}
+
+.plans:hover .btn {
+  background: var(--color-secondary);
+  color: white;
+}
+
+.plans .plans__button {
+  padding: 4rem 0;
+}
+
+.plans .plans__list {
+  padding-bottom: 1.5rem;
+  border-top: 1px solid rgb(230, 230, 230);
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
