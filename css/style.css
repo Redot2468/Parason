@@ -292,3 +292,22 @@ h3 {
     align-self: flex-end;
   }
 }
+
+/* brands */
+
+.brands {
+  border: 1px solid green;
+  justify-items: center;
+  padding: 3rem 0;
+}
+
+.brands > img {
+  border: 1px solid green;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+  .brands {
+    padding: 3rem 3rem 0;
+  }
+}
