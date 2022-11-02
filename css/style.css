@@ -311,3 +311,28 @@ h3 {
     padding: 3rem 3rem 0;
   }
 }
+
+/* forms */
+
+.email__add {
+  padding: 1.7rem;
+  background: #3e4350;
+  border: none;
+  color: rgb(209, 209, 209);
+}
+
+.email__add::placeholder {
+  color: var(--color-text);
+}
+
+.email__add:focus {
+  outline: 0;
+}
+
+.btn__submit {
+  padding: 1rem 2rem;
+  position: relative;
+  right: 50px;
+  background: var(--color-white);
+  border: none;
+}
