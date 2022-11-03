@@ -120,6 +120,12 @@ h3 {
   border: 1px solid green;
   padding: 2.5rem 3rem 2rem;
   background: #faf9ff;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.feature:hover {
+  background: var(--color-white);
+  box-shadow: 0 10px 30px rgb(204, 203, 203);
 }
 
 .feature i {
@@ -437,7 +443,7 @@ header {
 
 .hero__content .btn {
   margin-top: 3.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 650px) {
@@ -476,5 +482,37 @@ header {
   .hero__content {
     max-width: 500px;
     margin: auto;
+  }
+}
+
+/* awesome feature */
+
+.awesome__feature {
+  text-align: center;
+  padding: 2rem;
+}
+
+.features__awesome {
+  margin-top: 5rem;
+  row-gap: 20px;
+  column-gap: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .features__awesome {
+    max-width: 1100px;
+    margin: 5rem auto 0;
+  }
+
+  .awesome__feature {
+    max-width: 1100px;
+    margin: auto;
+  }
+  .features__awesome .feature {
+    text-align: left;
+  }
+  .awesome__feature .stats__pc-content {
+    max-width: 700px;
+    margin: 1.5rem auto;
   }
 }
