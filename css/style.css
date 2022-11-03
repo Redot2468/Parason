@@ -336,3 +336,63 @@ h3 {
   background: var(--color-white);
   border: none;
 }
+
+/* nav */
+.nav {
+  background: var(--color-nav);
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+}
+
+.nav__list,
+.nav .btn {
+  display: none;
+}
+
+.nav .fa-bars {
+  font-size: 24px;
+  color: var(--color-white);
+}
+
+.nav__logo {
+  height: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .nav__logo {
+    align-self: center;
+  }
+  .nav .fa-bars {
+    display: none;
+  }
+
+  .nav__list,
+  .nav .btn {
+    display: block;
+  }
+
+  .nav__list {
+    padding-left: 0;
+    display: flex;
+    border: 1px solid green;
+  }
+
+  .nav__list li {
+    list-style: none;
+    border: 1px solid green;
+    margin: 0 2rem;
+  }
+
+  .nav__list a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.4rem;
+    transition: color 0.2s;
+  }
+
+  .nav__list a:hover {
+    color: rgb(211, 201, 247);
+  }
+}
