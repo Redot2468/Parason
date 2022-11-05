@@ -276,8 +276,8 @@ h3 {
 @media screen and (min-width: 768px) {
   .offered__features {
     column-gap: 3rem;
-    row-gap: 0;
-    height: 500px;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
   }
 
   .offer__camera {
@@ -500,7 +500,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .features__awesome {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 5rem auto 0;
   }
 
@@ -548,7 +548,7 @@ header {
 @media screen and (min-width: 768px) {
   .revolution {
     padding: 4rem 2.5rem 0;
-    max-width: 1450px;
+    max-width: 1200px;
     margin: auto;
   }
   .pc__image {
@@ -585,5 +585,40 @@ header {
 @media screen and (min-width: 768px) {
   .stats__image {
     width: 80%;
+  }
+}
+
+/* offered features */
+.features__offer {
+  row-gap: 3rem;
+}
+
+.apple__pc {
+  width: 85%;
+  border: 1px solid green;
+  justify-self: center;
+}
+@media screen and (min-width: 768px) {
+  .offer__width {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .apple__pc {
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .features__offer {
+    column-gap: 5rem;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .apple__pc {
+    align-self: center;
+    width: 90%;
+    justify-self: center;
   }
 }
