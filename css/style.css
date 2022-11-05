@@ -516,3 +516,44 @@ header {
     margin: 1.5rem auto;
   }
 }
+
+/* revolution block */
+.revolution {
+  border: 1px solid green;
+  padding: 4rem 2.5rem 6rem;
+  background: #faf9ff;
+}
+
+.pc__image {
+  width: 100%;
+  order: 2;
+  border: 1px solid green;
+  margin-top: 4rem;
+}
+
+.revolution__desc .btn {
+  margin-top: 3rem;
+  padding: 1.5rem 4rem;
+  font-weight: 510;
+  color: rgb(51, 51, 51);
+}
+
+.revolution__desc {
+  border: 1px solid green;
+}
+
+@media screen and (min-width: 768px) {
+  .pc__image {
+    width: 90%;
+    align-self: center;
+  }
+
+  .revolution__heading {
+    font-size: 3.5rem;
+  }
+
+  .revolution__desc {
+    align-self: center;
+    padding: 2rem 8rem 3rem;
+  }
+}
