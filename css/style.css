@@ -518,10 +518,13 @@ header {
 }
 
 /* revolution block */
+.rev__width {
+  background: #faf9ff;
+}
+
 .revolution {
   border: 1px solid green;
-  padding: 4rem 2.5rem 6rem;
-  background: #faf9ff;
+  padding: 4rem 2.5rem 5rem;
 }
 
 .pc__image {
@@ -532,7 +535,7 @@ header {
 }
 
 .revolution__desc .btn {
-  margin-top: 3rem;
+  margin-top: 2rem;
   padding: 1.5rem 4rem;
   font-weight: 510;
   color: rgb(51, 51, 51);
@@ -543,6 +546,11 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .revolution {
+    padding: 4rem 2.5rem 0;
+    max-width: 1450px;
+    margin: auto;
+  }
   .pc__image {
     width: 90%;
     align-self: center;
@@ -555,5 +563,27 @@ header {
   .revolution__desc {
     align-self: center;
     padding: 2rem 8rem 3rem;
+  }
+}
+
+/* stats */
+
+.stats {
+  grid-template-areas:
+    "a"
+    "b";
+
+  row-gap: 30px;
+}
+
+.stats__image {
+  order: -1;
+  width: 95%;
+  justify-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .stats__image {
+    width: 80%;
   }
 }
