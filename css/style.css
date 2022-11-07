@@ -622,3 +622,13 @@ header {
     justify-self: center;
   }
 }
+
+/* plans block */
+.plans__block-width {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.plans__block {
+  margin-top: 3rem;
+}
