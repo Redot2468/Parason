@@ -632,3 +632,15 @@ header {
 .plans__block {
   margin-top: 3rem;
 }
+
+/* testimonial block */
+.testimonial__block {
+  background-color: #faf9ff;
+  border: 1px solid green;
+  height: fit-content;
+  padding: 4rem 3rem 10rem;
+}
+
+.testimonial .name {
+  margin-top: 3rem;
+}
