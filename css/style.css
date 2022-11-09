@@ -321,7 +321,7 @@ h3 {
 /* forms */
 
 .email__add {
-  padding: 1.7rem;
+  padding: 1.5rem;
   background: #3e4350;
   border: none;
   color: rgb(209, 209, 209);
@@ -643,4 +643,135 @@ header {
 
 .testimonial .name {
   margin-top: 3rem;
+}
+
+/* footer block */
+footer {
+  background: #0e1424;
+  padding: 5rem 3rem 2rem;
+}
+
+.footer__block1 > section {
+  border: 1px solid green;
+
+  margin: 0;
+}
+
+.products {
+  margin-bottom: 1rem;
+}
+
+.link__heading {
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.footer__links {
+  padding-left: 0;
+  margin-top: 2.5rem;
+}
+
+.footer__links li {
+  list-style: none;
+  margin: 1.5rem 0;
+}
+
+.footer__links a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.products .email__add {
+  margin-top: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding-left: 3rem;
+  }
+  .footer__block1 {
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e e";
+    max-width: 1100px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__block1 {
+    grid-template-areas: "a b c d e";
+    column-gap: 1rem;
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .link__heading {
+    font-size: 1.9rem;
+  }
+
+  .footer__block1 .form__product {
+    width: fit-content;
+  }
+
+  .news__form {
+    grid-area: e;
+  }
+
+  .products .email__add {
+    width: 100%;
+    display: block;
+  }
+
+  .news__form .btn__submit {
+    position: none;
+    margin-top: 1rem;
+    margin-left: 5rem;
+  }
+}
+
+/* copy */
+.copyright {
+  justify-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.copy {
+  align-self: center;
+  margin-top: 6rem;
+}
+
+.medias {
+  padding-left: 0;
+  align-self: center;
+  border: 1px solid green;
+}
+
+.medias li {
+  list-style: none;
+  display: inline;
+}
+
+.medias i {
+  color: rgb(224, 224, 224);
+  border: 1px solid gray;
+  padding: 1rem;
+  margin: 0.4rem;
+  background: rgb(35, 32, 54);
+}
+
+@media screen and (min-width: 768px) {
+  .copyright {
+    margin-top: 5rem;
+  }
+  .copy {
+    margin-top: 0;
+    justify-self: left;
+  }
+
+  .medias {
+    justify-self: right;
+  }
 }
