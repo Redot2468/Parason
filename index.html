@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Convert your software into simple, dynamic, and abstract software"
+    />
+    <meta name="og:title" content="Parason" />
+    <meta
+      property="og:image"
+      content="https://ia.media-imdb.com/images/rock.jpg"
+    />
+    <title>Parason - Advanced software made simple</title>
 
     <!-- font awesome -->
     <script
@@ -23,8 +32,346 @@
     <!-- styles -->
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <!-- putting the web components together -->
+    <!-- header -->
+    <header>
+      <!-- nav -->
+      <div class="nav">
+        <img src="./images/logo.webp" alt="logo" class="nav__logo" />
+
+        <i class="fa-solid fa-bars"></i>
+
+        <ul class="nav__list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Feature</a></li>
+          <li><a href="">Price</a></li>
+          <li><a href="">Pages</a></li>
+          <li><a href="">contact</a></li>
+        </ul>
+
+        <button class="btn btn__primary">Sign Up</button>
+      </div>
+
+      <!-- hero -->
+      <div class="grid grid__1x2 hero">
+        <section class="hero__banner" data-aos="zoom-in-down">
+          <img src="./images/hero-banner.png.webp" alt="hero__banner" />
+        </section>
+
+        <section class="hero__content">
+          <h1 class="hero__heading">Advanced software made simple</h1>
+          <p class="hero__desc">
+            Vel aliquam quis, nulla pede mi commodo tristique nam hac Luctun
+            torquent velit felis commodo pellentesque nulla cras vel aliqua
+            quisan nulla pede mi commoda
+          </p>
+          <button class="btn btn__primary">Get Started</button>
+        </section>
+      </div>
+    </header>
+
+    <!-- awesome section -->
+    <div class="awesome__feature">
+      <div class="stats__pc">
+        <h2 class="stats__pc-heading">Awesome Soft Feature</h2>
+        <p class="stats__pc-content">
+          Vel aliquam quis, nulla pede mi commodo tristique nam hac. Luctus
+          torquent velit felis commodo pellentesque nulla cras. Tincidunt hacvel
+          alivquam quis nulla pede mi commodo tristique nam hac luctus torquent
+        </p>
+      </div>
+
+      <div class="grid grid__1x2 grid__autofit features__awesome">
+        <div
+          class="feature"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <i class="fas fa-camera-retro"></i>
+          <h3 class="feature__heading">Unique Design</h3>
+          <p class="feature__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+            minima?
+          </p>
+        </div>
+
+        <div
+          class="feature"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <i class="fas fa-stopwatch"></i>
+          <h3 class="feature__heading">Business Solution</h3>
+          <p class="feature__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+            minima?
+          </p>
+        </div>
+
+        <div
+          class="feature"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <i class="fas fa-headphones-alt"></i>
+          <h3 class="feature__heading">Customer Suppor</h3>
+          <p class="feature__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+            minima?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- revolution block -->
+    <div class="rev__width">
+      <div class="grid grid__1x2 revolution">
+        <img
+          src="./images/entertainment_laptop.webp"
+          alt="pc"
+          class="pc__image"
+          data-aos="zoom-in-down"
+        />
+
+        <aside class="revolution__desc">
+          <h2 class="revolution__heading">
+            Leading the Digital Entertainment Revolution
+          </h2>
+          <p class="revolution__content">
+            Molestie lorem est faucibus Faucibus erat phasellus placerat
+            proinint aptent pulvinar fusce nostra porta sem platea nec, donec
+            fusce erat Molestie lorem est faucibus faucibus erat phasellus
+            placerat proin aptent pulvinar fusce nostra port
+          </p>
+          <button class="btn btn__primary btn__secondary">Know More</button>
+        </aside>
+      </div>
+    </div>
+
+    <!-- offered features block -->
+
+    <div class="offer__width">
+      <div class="block__heading">
+        <h2 class="block__head">Features We Offer</h2>
+        <p class="block__desc">
+          Vel aliquam quis, nulla pede mi commodo tristique nam hac. Luctus
+          torquent velit felis commodo pellentesque nulla cras. Tincidunt hacvel
+          alivquam quis nulla pede mi commodo tristique nam hac luctus torquent
+        </p>
+      </div>
+      <div class="grid grid__1x2 features__offer">
+        <div class="grid grid__1x2 offered__features">
+          <div
+            class="feature offer__camera"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <i class="fas fa-camera-retro"></i>
+            <h3 class="feature__heading">Easy To Manage</h3>
+            <p class="feature__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              minima?
+            </p>
+          </div>
+          <div
+            class="feature offer__paper"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <i class="far fa-newspaper"></i>
+            <h3 class="feature__heading">Analytics Tools</h3>
+            <p class="feature__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              minima?
+            </p>
+          </div>
+          <div
+            class="feature offer__snowflake"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <i class="fas fa-snowflake"></i>
+            <h3 class="feature__heading">Professionals Tools</h3>
+            <p class="feature__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              minima?
+            </p>
+          </div>
+          <div
+            class="feature offer__stopwatch"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+          >
+            <i class="fas fa-stopwatch"></i>
+            <h3 class="feature__heading">Ready Content</h3>
+            <p class="feature__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
+              minima?
+            </p>
+          </div>
+        </div>
+        <img
+          src="./images/apple_laptop.webp"
+          alt="apple_laptop"
+          class="apple__pc"
+          data-aos="zoom-in-down"
+        />
+      </div>
+    </div>
+
+    <!-- statistics block -->
+
+    <div class="rev__width">
+      <div class="grid grid__1x2 stats revolution">
+        <img
+          src="./images/statistics_image.webp"
+          alt="pc"
+          class="pc__image stats__image"
+          data-aos="zoom-in-down"
+        />
+        <aside class="stats__desc revolution__desc">
+          <h2 class="stats__heading revolution__heading">
+            Simple Solutions for Complex Connections
+          </h2>
+          <p class="stats__content revolution__content">
+            Molestie lorem est faucibus Faucibus erat phasellus placerat
+            proinint aptent pulvinar fusce nostra porta sem platea nec, donec
+            fusce erat Molestie lorem est faucibus faucibus erat phasellus
+            placerat proin aptent pulvinar fusce nostra port
+          </p>
+          <button class="btn btn__primary btn__secondary">Know More</button>
+        </aside>
+      </div>
+    </div>
+
+    <!-- plans -->
+
+    <div class="plans__block-width">
+      <div class="block__heading">
+        <h2 class="block__head">Choose Your Plan</h2>
+        <p class="block__desc">
+          Vel aliquam quis, nulla pede mi commodo tristique nam hac. Luctus
+          torquent velit felis commodo pellentesque nulla cras. Tincidunt hacvel
+          alivquam quis nulla pede mi commodo tristique nam hac luctus torquent
+        </p>
+      </div>
+      <div class="grid grid__1x2 grid__autofit plans__block">
+        <div
+          class="plans normal"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <section class="plans__heading">
+            <h3 class="plan__type">Ultimate</h3>
+            <p class="plan__desc">Attend only first day</p>
+            <h3 class="plan__price">&dollar;65.00</h3>
+          </section>
+          <section class="plans__list">
+            <ul class="list">
+              <li><i class="fa-solid fa-check"></i> Unlimited Entrance</li>
+              <li><i class="fa-solid fa-check"></i> Comfortable Seat</li>
+              <li><i class="fa-solid fa-check"></i> Paid Certificate</li>
+              <li><i class="fa-solid fa-check"></i> Day One Workshop</li>
+              <li><i class="fa-solid fa-check"></i> One Certificate</li>
+            </ul>
+          </section>
+          <section class="plans__button">
+            <button class="btn btn__primary btn__secondary">Get Started</button>
+          </section>
+        </div>
+        <div
+          class="plans normal"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <section class="plans__heading">
+            <h3 class="plan__type">Ultimate</h3>
+            <p class="plan__desc">Attend only first day</p>
+            <h3 class="plan__price">&dollar;65.00</h3>
+          </section>
+          <section class="plans__list">
+            <ul class="list">
+              <li><i class="fa-solid fa-check"></i> Unlimited Entrance</li>
+              <li><i class="fa-solid fa-check"></i> Comfortable Seat</li>
+              <li><i class="fa-solid fa-check"></i> Paid Certificate</li>
+              <li><i class="fa-solid fa-check"></i> Day One Workshop</li>
+              <li><i class="fa-solid fa-check"></i> One Certificate</li>
+            </ul>
+          </section>
+          <section class="plans__button">
+            <button class="btn btn__primary btn__secondary">Get Started</button>
+          </section>
+        </div>
+        <div
+          class="plans normal"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <section class="plans__heading">
+            <h3 class="plan__type">Ultimate</h3>
+            <p class="plan__desc">Attend only first day</p>
+            <h3 class="plan__price">&dollar;65.00</h3>
+          </section>
+          <section class="plans__list">
+            <ul class="list">
+              <li><i class="fa-solid fa-check"></i> Unlimited Entrance</li>
+              <li><i class="fa-solid fa-check"></i> Comfortable Seat</li>
+              <li><i class="fa-solid fa-check"></i> Paid Certificate</li>
+              <li><i class="fa-solid fa-check"></i> Day One Workshop</li>
+              <li><i class="fa-solid fa-check"></i> One Certificate</li>
+            </ul>
+          </section>
+          <section class="plans__button">
+            <button class="btn btn__primary btn__secondary">Get Started</button>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonial -->
+
+    <div class="testimonial__block">
+      <div class="block__heading">
+        <h2 class="block__head">Choose Your Plan</h2>
+        <p class="block__desc">
+          Vel aliquam quis, nulla pede mi commodo tristique nam hac. Luctus
+          torquent velit felis commodo pellentesque nulla cras. Tincidunt hacvel
+          alivquam quis nulla pede mi commodo tristique nam hac luctus torquent
+        </p>
+      </div>
+      <div class="testimonial__avatar">
+        <img src="./images/stephen_avatar.webp" alt="stephen_avatar" />
+      </div>
+      <article class="testimonial">
+        <h3 class="name">Stephen Mcmilan</h3>
+        <p class="position">Executive, ACI Group</p>
+        <p class="testimony">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis,
+          asperiores? Eligendi esse laborum rem voluptate pariatur officiis
+          nostrum laudantium quam exercitationem a dignissimos, cumque neque
+          consectetur reprehenderit impedit sint sit repudiandae eum sed
+          suscipit quibusdam nam aperiam adipisci nesciunt. Ipsum.
+        </p>
+      </article>
+    </div>
+
+    <!-- brands -->
+    <div class="grid grid__1x2 grid__autofit brands">
+      <img src="./images/premium_labels.webp" alt="" />
+      <img src="./images/premium.webp" alt="" />
+      <img src="./images/vintage_premium.webp" alt="" />
+      <img src="./images/creative.webp" alt="" />
+      <img src="./images/highquality_image.webp" alt="" />
+      <img src="./images/premium_labels.webp" alt="" />
+    </div>
+
+    <!-- footer -->
+
     <footer>
       <div class="grid grid__1x2 grid__autofit footer__block1">
         <section class="products">
@@ -98,22 +445,29 @@
           <p>Copyright ©2022 All rights reserved</p>
         </div>
 
-  
-          <ul class="medias">
-            <li>
-              <a href="www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="www.pinterest.com"
-                ><i class="fa-brands fa-pinterest-p"></i>
-              </a>
-            </li>
-      
+        <ul class="medias">
+          <li>
+            <a href="www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="www.facebook.com"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="www.pinterest.com"
+              ><i class="fa-brands fa-pinterest-p"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
+
+    <!-- script for the animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
 

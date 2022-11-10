@@ -49,7 +49,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.7rem;
+  font-size: 3.3rem;
   margin-bottom: 0;
 }
 
@@ -97,10 +97,6 @@ h3 {
   grid-auto-rows: minmax(100px, auto);
 }
 
-.grid > div {
-  border: 1px solid green;
-}
-
 @media screen and (min-width: 768px) {
   .grid__1x2 {
     grid-template-columns: repeat(2, 1fr);
@@ -117,7 +113,6 @@ h3 {
 
 .feature {
   text-align: center;
-  border: 1px solid green;
   padding: 2.5rem 3rem 2rem;
   background: #faf9ff;
   transition: background 0.2s, box-shadow 0.2s;
@@ -139,7 +134,6 @@ h3 {
 
 /* stats and pc description */
 .stats__pc {
-  border: 1px solid green;
 }
 
 .stats__pc .btn {
@@ -149,7 +143,6 @@ h3 {
 /* block headings */
 
 .block__heading {
-  border: 1px solid green;
   text-align: center;
   padding: 1rem 2rem;
 }
@@ -167,7 +160,6 @@ h3 {
 
 /* testimonial section */
 .testimonial {
-  border: 1px solid green;
   text-align: center;
   padding: 5rem 3.5rem 2.5rem;
   background: var(--color-white);
@@ -270,7 +262,6 @@ h3 {
 .offered__features {
   padding: 2rem;
   row-gap: 2rem;
-  border: 1px solid green;
 }
 
 @media screen and (min-width: 768px) {
@@ -302,19 +293,20 @@ h3 {
 /* brands */
 
 .brands {
-  border: 1px solid green;
   justify-items: center;
   padding: 3rem 0;
+  margin: 10rem;
 }
 
 .brands > img {
-  border: 1px solid green;
   opacity: 0.3;
 }
 
 @media screen and (min-width: 768px) {
   .brands {
     padding: 3rem 3rem 0;
+    max-width: 1200px;
+    margin: 10rem auto;
   }
 }
 
@@ -389,12 +381,11 @@ h3 {
   .nav__list {
     padding-left: 0;
     display: flex;
-    border: 1px solid green;
   }
 
   .nav__list li {
     list-style: none;
-    border: 1px solid green;
+
     margin: 0 2rem;
   }
 
@@ -426,10 +417,6 @@ header {
 .hero {
   padding: 2.5rem 2.5rem 8rem;
   row-gap: 2rem;
-}
-
-.hero > section {
-  border: 1px solid green;
 }
 
 .hero__banner img {
@@ -490,6 +477,7 @@ header {
 .awesome__feature {
   text-align: center;
   padding: 2rem;
+  margin: 5rem;
 }
 
 .features__awesome {
@@ -506,7 +494,7 @@ header {
 
   .awesome__feature {
     max-width: 1100px;
-    margin: auto;
+    margin: 7rem auto;
   }
   .features__awesome .feature {
     text-align: left;
@@ -523,14 +511,12 @@ header {
 }
 
 .revolution {
-  border: 1px solid green;
   padding: 4rem 2.5rem 5rem;
 }
 
 .pc__image {
   width: 100%;
   order: 2;
-  border: 1px solid green;
   margin-top: 4rem;
 }
 
@@ -541,10 +527,6 @@ header {
   color: rgb(51, 51, 51);
 }
 
-.revolution__desc {
-  border: 1px solid green;
-}
-
 @media screen and (min-width: 768px) {
   .revolution {
     padding: 4rem 2.5rem 0;
@@ -552,7 +534,7 @@ header {
     margin: auto;
   }
   .pc__image {
-    width: 90%;
+    width: 100%;
     align-self: center;
   }
 
@@ -589,19 +571,21 @@ header {
 }
 
 /* offered features */
+.offer__width {
+  margin-top: 10rem;
+}
 .features__offer {
   row-gap: 3rem;
 }
 
 .apple__pc {
   width: 85%;
-  border: 1px solid green;
   justify-self: center;
 }
 @media screen and (min-width: 768px) {
   .offer__width {
     max-width: 1200px;
-    margin: auto;
+    margin: 10rem auto;
   }
 
   .apple__pc {
@@ -626,7 +610,7 @@ header {
 /* plans block */
 .plans__block-width {
   max-width: 1200px;
-  margin: auto;
+  margin: 10rem auto 0;
 }
 
 .plans__block {
@@ -636,9 +620,9 @@ header {
 /* testimonial block */
 .testimonial__block {
   background-color: #faf9ff;
-  border: 1px solid green;
   height: fit-content;
   padding: 4rem 3rem 10rem;
+  margin-top: 8rem;
 }
 
 .testimonial .name {
@@ -648,12 +632,10 @@ header {
 /* footer block */
 footer {
   background: #0e1424;
-  padding: 5rem 3rem 2rem;
+  padding: 5rem 3rem 2rem 3rem;
 }
 
 .footer__block1 > section {
-  border: 1px solid green;
-
   margin: 0;
 }
 
@@ -683,6 +665,7 @@ footer {
 
 .products .email__add {
   margin-top: 1.2rem;
+  width: 50%;
 }
 
 @media screen and (min-width: 768px) {
@@ -725,7 +708,6 @@ footer {
   }
 
   .news__form .btn__submit {
-    position: none;
     margin-top: 1rem;
     margin-left: 5rem;
   }
@@ -746,7 +728,6 @@ footer {
 .medias {
   padding-left: 0;
   align-self: center;
-  border: 1px solid green;
 }
 
 .medias li {
@@ -756,7 +737,6 @@ footer {
 
 .medias i {
   color: rgb(224, 224, 224);
-  border: 1px solid gray;
   padding: 1rem;
   margin: 0.4rem;
   background: rgb(35, 32, 54);
